@@ -55,3 +55,7 @@ function parse_git_dirty {
 }
 
 export PS1="\[\e[31m\]\W\[\e[m\]\[\e[36m\]\\$\[\e[m\]\[\e[33;44m\]\`parse_git_branch\`\[\e[m\]\[\e[36m\]:\[\e[m\] "
+
+#White&Bold ls/ll folders.
+
+LS_COLORS=$LS_COLORS:'di=1;37:' ; export LS_COLOR
